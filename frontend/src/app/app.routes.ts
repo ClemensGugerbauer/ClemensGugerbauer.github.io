@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import {QuizComponent} from './quiz/quiz.component';
 import {DescriptionComponent} from './description/description.component';
 import {GameComponent} from './game/game.component';
 
