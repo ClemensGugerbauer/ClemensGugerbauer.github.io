@@ -1,0 +1,81 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #424242;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.closed {
+  transform: translateX(-250px);
+}
+
+.sidebar a {
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar-content{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 1.2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  * > a {
+    padding: 5%;
+  }
+}
+
+.sidebar-top-content{
+  flex: 1;
+  display: flex;
+  height: 30rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3rem;
+  gap: 5rem;
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: -50px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.toggle-btn:hover {
+  background: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar.closed {
+    transform: translateX(-200px);
+  }
+
+  .toggle-btn {
+    right: -40px;
+  }
+}

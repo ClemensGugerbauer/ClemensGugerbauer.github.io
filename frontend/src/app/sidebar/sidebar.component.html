@@ -1,0 +1,9 @@
+<div class="sidebar" [class.closed]="!isOpen()">
+  <ul class="sidebar-content">
+    <div class="sidebar-top-content">
+      <li><a (click)="navigateToGame()">Game</a></li>
+      <li><a (click)="navigateToDescription()">Description</a></li>
+    </div>
+  </ul>
+  <button class="toggle-btn" (click)="toggleSidebar()">☰</button>
+</div>
