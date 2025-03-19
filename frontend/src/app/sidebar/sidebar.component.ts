@@ -26,4 +26,9 @@ export class SidebarComponent {
     this.router.navigateByUrl('/description');
     this.isOpen.set(false);
   }
+
+  navigateToHelp() {
+    this.router.navigateByUrl('/help');
+    this.isOpen.set(false);
+  }
 }

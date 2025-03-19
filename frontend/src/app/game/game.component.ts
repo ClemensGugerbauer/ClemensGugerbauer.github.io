@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
+import {Component, signal} from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-game',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './game.component.html',
   styleUrl: './game.component.css'
 })
 export class GameComponent {
 
-
+  inputCode = signal<number | null>(null);
 
   ngOnInit() {
 
@@ -22,5 +23,4 @@ export class GameComponent {
       }
     }
   }
-
 }
