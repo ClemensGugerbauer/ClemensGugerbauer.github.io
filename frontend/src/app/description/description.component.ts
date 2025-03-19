@@ -14,7 +14,6 @@ export class DescriptionComponent {
       dialog.showModal();
     }
     else {
-      alert("dialog not found:" + dialogid);
       console.error("dialog not found:" + dialogid);
     }
   }

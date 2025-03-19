@@ -1,0 +1,56 @@
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+dialog .game-code-dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+dialog p {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+dialog input.game-input-code-dialog {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+dialog form {
+  text-align: right;
+}
+
+dialog button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+dialog button:hover {
+  background-color: #c0392b;
+}
+
+
+@media (max-width: 768px) {
+
+  dialog button {
+    width: 100%;
+  }
+}

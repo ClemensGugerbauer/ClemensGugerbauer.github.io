@@ -8,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class GameComponent {
 
+
+
+  ngOnInit() {
+
+    if(true) {
+      const dialog = document.getElementById('game-code-dialog') as HTMLDialogElement;
+      if (dialog) {
+        dialog.showModal();
+      }
+      else {
+        console.error('game-code-dialog not found');
+      }
+    }
+  }
+
 }
