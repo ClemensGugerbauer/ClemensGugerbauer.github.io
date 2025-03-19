@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class DescriptionComponent {
 
+  openDialog(dialogid: string) {
+    const dialog = document.getElementById(dialogid) as HTMLDialogElement;
+    if(dialog) {
+      dialog.showModal();
+    }
+    else {
+      alert("dialog not found:" + dialogid);
+      console.error("dialog not found:" + dialogid);
+    }
+  }
 }

@@ -1,30 +1,131 @@
 <div class="description">
   <h1>Description</h1>
-  <p>Explore the city, learn, decide – and see the consequences!</p>
+  <p>
+    Explore the city, learn, decide – and see the consequences!<br>
+    In this interactive game, you will be able to explore the city solve quests to
+    learn about radicalism.
+    At the end there are also <br> challenges wich are configurated by
+    the institution you are from. <br><br>
+
+    Quests could look like this:
+  </p>
   <div class="description-content">
     <div class="description-item">
-      <h2>Step 1 idk</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Dolorem, magni, odio? Aliquid
-        at consectetur expedita molestiae nesciunt non omnis,
-        optio placeat quia. Accusamus alias deleniti ex quibusdam
-        sint tempore veritatis?</p>
+      <h2>Quest 1</h2>
+      <p>
+        Marius, Max, and their friends are in the schoolyard. Marius grabs Max’s Samsung phone and smashes it, saying he hates Samsung.
+        <br>
+        Imagine you are Max. How would you feel?
+        <br><br>
+        What can you do?
+        (A, B, C, D)
+        <br>
+        Best choice: A or B
+      </p>
+      <div class="description-see-more-btn" (click)="openDialog('quest1-dialog')"><p>See more</p></div>
+
+      <dialog id="quest1-dialog">
+        <p>
+          1. Marius destroys Max's phone
+          <br>
+          Situation:
+          Marius, Max, and their friends are on the schoolyard. Suddenly, Marius takes Max’s Samsung phone and destroys it. He says he doesn’t like Samsung phones and that’s why he broke it.
+          <br>
+          Put yourself in Max's shoes:
+          Imagine someone broke your phone or another important possession just because they didn’t like it. How would you feel? Angry? Sad? Treated unfairly?
+          <br><br>
+          What can you do?<br>
+          <strong>A)</strong> Calmly tell Marius that what he did was wrong and ask him to apologize.<br>
+          <strong>B)</strong> Go to a teacher and report what happened.<br>
+          <strong>C)</strong> Laugh along with Marius and say that Samsung phones are bad anyway.<br>
+          <strong>D)</strong> Pretend you didn’t see anything because you don’t want to get involved.<br>
+          <br><br>
+          Best choices:
+          A or B – Marius needs to understand that destroying someone else's property is wrong. An adult can help resolve the situation.
+
+        </p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+
     </div>
     <div class="description-item">
-      <h2>Step 2 idk</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Dolorem, magni, odio? Aliquid
-        at consectetur expedita molestiae nesciunt non omnis,
-        optio placeat quia. Accusamus alias deleniti ex quibusdam
-        sint tempore veritatis?</p>
+      <h2>Quest 2</h2>
+      <p>
+        Justus says:
+        "This wizard and his family must go! If not, we’ll make sure they do – just look at his scruffy hair!"
+        <br>
+        But you know the wizard has already helped.
+        <br><br>
+        What can you do?
+        (A, B, C, D)
+        <br>
+        Best choice: A or D
+      </p>
+      <div class="description-see-more-btn" (click)="openDialog('quest2-dialog')"><p>See more</p></div>
+
+      <dialog id="quest2-dialog">
+        <p>
+          2. Justus speaks out against the wizard
+          <br>
+          Situation:
+          Justus says to you under the wizard's tower:
+          "This wizard and his family must finally disappear! Otherwise, we’ll take care of it ourselves – just because of his scruffy hair."
+          <br>
+          But you know: The wizard has already helped. Maybe Justus doesn’t know that.
+          <br><br>
+          What can you do?<br>
+          <strong>A)</strong> Calmly explain to Justus that the wizard has already helped and that it’s unfair to drive him away.<br>
+          <strong>B)</strong> Ignore Justus and walk away.<br>
+          <strong>C)</strong> Agree with Justus and help him get rid of the wizard.<br>
+          <strong>D)</strong> Go to the wizard and warn him that Justus wants to drive him away.<br>
+          <br><br>
+          Best choices:
+          A or D – It’s important to stand up against injustice or help the wizard if he is in danger.</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+
     </div>
     <div class="description-item">
-      <h2>Step 3 idk</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Dolorem, magni, odio? Aliquid
-        at consectetur expedita molestiae nesciunt non omnis,
-        optio placeat quia. Accusamus alias deleniti ex quibusdam
-        sint tempore veritatis?</p>
+      <h2>Quest 3</h2>
+      <p>
+        You see Justus hitting a person with colorful hair at the marketplace.
+        <br>
+        Imagine it was you. How would you feel?
+        <br><br>
+        What can you do?
+        (A, B, C, D)
+
+        <br>
+        Best choice: B
+      </p>
+      <div class="description-see-more-btn" (click)="openDialog('quest3-dialog')"><p>See more</p></div>
+
+      <dialog id="quest3-dialog">
+        <p>
+          3. Justus attacks someone with colorful hair
+          <br>
+          Situation:
+          At the marketplace, you see Justus hitting a person with colorful hair.
+          <br>
+          Put yourself in their position:
+          Imagine being attacked just because someone doesn’t like the way you look. That’s not fair! The person might be scared or in pain.
+          <br><br>
+          What can you do?<br>
+          <strong>A)</strong> Step in and try to stop Justus, even if it’s dangerous.<br>
+          <strong>B)</strong> Call for help immediately, such as a guard or another authority figure.<br>
+          <strong>C)</strong> Look briefly but decide not to get involved – it’s none of your business.<br>
+          <strong>D)</strong> Cheer Justus on and support him.<br>
+          <br><br>
+          Best choice:
+          B) Call for help immediately. Violence is dangerous, and it’s important to get support quickly rather than put yourself in danger.</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
     </div>
   </div>
 </div>
