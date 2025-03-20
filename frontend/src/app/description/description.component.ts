@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-description',
@@ -55,5 +56,9 @@ export class DescriptionComponent {
       console.error("dialog not found:" + dialogId);
       return;
     }
+  }
+
+  get pageImageUrl(): string {
+    return `assets/images/map-before.png`;
   }
 }
