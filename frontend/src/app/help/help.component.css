@@ -1,6 +1,11 @@
 /* src/app/help/help.component.css */
 .help-main {
-  margin: 10rem 50rem 10rem 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 65%;
   padding: 1.25rem;
   background: #424242;
   color: white;
@@ -61,7 +66,7 @@
 
 @media (max-width: 48rem) {
   .help-main {
-    margin: 0.5rem;
+    margin: 5rem 0.5rem 0.5rem 0.5rem;
     padding: 0.625rem;
   }
 

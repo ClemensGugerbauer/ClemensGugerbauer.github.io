@@ -10,8 +10,13 @@ import {FormsModule} from '@angular/forms';
 export class GameComponent {
 
   inputCode = signal<number | null>(null);
+  isMobileDevice = signal<boolean>(false);
 
   ngOnInit() {
+
+    if (window.innerWidth < 768) {
+      this.isMobileDevice.set(true);
+    }
 
     if(true) {
       const dialog = document.getElementById('game-code-dialog') as HTMLDialogElement;

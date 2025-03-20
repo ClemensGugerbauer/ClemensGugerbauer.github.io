@@ -1,11 +1,15 @@
 <dialog id="game-code-dialog">
-  <div class="game-code-dialog-content">
-    <p>
-      Enter Code:
-    </p>
-    <input class="game-input-code-dialog" type="number" [(ngModel)]="inputCode" required/>
-    <form method="dialog">
-      <button>OK</button>
-    </form>
-  </div>
+  @if (isMobileDevice()) {
+    <p>The game is not playable on mobile devices :(</p>
+  } @else {
+    <div class="game-code-dialog-content">
+      <p>
+        Enter Code:
+      </p>
+      <input class="game-input-code-dialog" type="number" [(ngModel)]="inputCode" required/>
+      <form method="dialog">
+        <button>OK</button>
+      </form>
+    </div>
+  }
 </dialog>

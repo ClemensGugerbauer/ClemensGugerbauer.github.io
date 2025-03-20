@@ -18,7 +18,6 @@ dialog .game-code-dialog-content {
 dialog p {
   font-size: 1rem;
   color: #333333;
-  margin-bottom: 10px;
 }
 
 dialog input.game-input-code-dialog {
@@ -34,7 +33,7 @@ dialog form {
 }
 
 dialog button {
-  background-color: #e74c3c;
+  background-color: #38598b;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -44,9 +43,8 @@ dialog button {
 }
 
 dialog button:hover {
-  background-color: #c0392b;
+  background-color: #1f3f6c;
 }
-
 
 @media (max-width: 768px) {
 

@@ -4,7 +4,7 @@
     Explore the city, learn, decide – and see the consequences!<br>
     In this interactive game, you will be able to explore the city solve quests to
     learn about radicalism.
-    At the end there are also <br> challenges wich are configurated by
+    At the end there are also challenges wich are configurated by
     the institution you are from. <br><br>
 
     Quests could look like this:
@@ -17,12 +17,12 @@
         <br>
         Imagine you are Max. How would you feel?
         <br><br>
-        What can you do?
-        (A, B, C, D)
-        <br>
-        Best choice: A or B
       </p>
       <div class="description-see-more-btn" (click)="openDialog('quest1-dialog')"><p>See more</p></div>
+
+      @if (isDialogOpen('quest1-dialog')) {
+        <div class="dialog-overlay"></div>
+      }
 
       <dialog id="quest1-dialog">
         <p>
@@ -45,7 +45,7 @@
 
         </p>
         <form method="dialog">
-          <button>OK</button>
+          <button (click)="closeDialog('quest1-dialog')">OK</button>
         </form>
       </dialog>
 
@@ -58,12 +58,12 @@
         <br>
         But you know the wizard has already helped.
         <br><br>
-        What can you do?
-        (A, B, C, D)
-        <br>
-        Best choice: A or D
       </p>
       <div class="description-see-more-btn" (click)="openDialog('quest2-dialog')"><p>See more</p></div>
+
+      @if (isDialogOpen('quest2-dialog')) {
+        <div class="dialog-overlay"></div>
+      }
 
       <dialog id="quest2-dialog">
         <p>
@@ -84,7 +84,7 @@
           Best choices:
           A or D – It’s important to stand up against injustice or help the wizard if he is in danger.</p>
         <form method="dialog">
-          <button>OK</button>
+          <button (click)="closeDialog('quest2-dialog')">OK</button>
         </form>
       </dialog>
 
@@ -96,13 +96,12 @@
         <br>
         Imagine it was you. How would you feel?
         <br><br>
-        What can you do?
-        (A, B, C, D)
-
-        <br>
-        Best choice: B
       </p>
       <div class="description-see-more-btn" (click)="openDialog('quest3-dialog')"><p>See more</p></div>
+
+      @if (isDialogOpen('quest3-dialog')) {
+        <div class="dialog-overlay"></div>
+      }
 
       <dialog id="quest3-dialog">
         <p>
@@ -123,7 +122,7 @@
           Best choice:
           B) Call for help immediately. Violence is dangerous, and it’s important to get support quickly rather than put yourself in danger.</p>
         <form method="dialog">
-          <button>OK</button>
+          <button (click)="closeDialog('quest3-dialog')">OK</button>
         </form>
       </dialog>
     </div>
